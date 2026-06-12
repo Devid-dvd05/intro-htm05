@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como organizar imagens</title>
+
+</head>
+
+<body>
+
+    <h1>Conhecendo o elemento de imagem</h1>
+
+    <hr>
+
+    <h2>Sobre imagens</h2>
+    <p>Trabalhar com imagens no <abbr title="HyperText Markup Language">HTML</abbr> envolve muito mais do que apenas
+        colocar uma foto na página.</p>
+    <p>Existem várias formas tecnicas e recursos para exibir, organizar, otimizar e adaptar imagens para diferentes
+        dispositivos.</p>
+
+    <h3>Formatos mais comuns de imagens</h3>
+
+    <ul>
+        <li><strong>JPEG/JPG</strong>: Fotos e imagens compactadas</li>
+        <li><strong>PNG</strong>: Suporta transparência</li>
+        <li><Strong>WEBp</Strong>: Formato moderno e leve (também suporta transparência)</li>
+        <li><strong>Gif</strong>: Animações simples</li>
+        <li><strong>Avif</strong>: Excelente qualidade com um tamanho pequeno</li>
+
+    </ul>
+
+    <hr>
+
+
+    <h2>Sobre o elemento img</h2>
+    <p>A forma mais comum de inserir imagens no HTML, é usando a tag <code>img</code></p>
+
+    <h3>Exemplo pratico</h3>
+    <h4>Trabalhando com links externos/URL de sites</h4>
+    <img src="https://media.istockphoto.com/id/155908717/pt/foto/tarte-de-lima.jpg?s=1024x1024&w=is&k=20&c=SE0TCZNMU6nEJXuHTau1VpF977zRdFfbo8msFPWz6GU="
+        alt="">
+
+    <p>SRC (source/fonte)- Atributo responsável pelo caminho da imagem, ou seja, defini onde está a imagem.</p>
+
+    <hr>
+
+    <h4>Trabalhando com imagens locais</h4>
+
+    <img src="assets/foto de bolo de chocolate.jpg" alt="bolo de chocolate com calda de chocolate">
+
+    <p>ALT (alternative/alternativo) - É o elemento que será apresentado caso a imagem não carregue.</p>
+    <p>O atributo alt é <strong>MUITO IMPORTANTE</strong></p>
+
+    <ul>
+        <li>Acesseibilidade</li>
+        <li>Leitores de tela</li>
+        <li>SEO</li>
+        <li>Fallback</li>
+    </ul>
+
+    <hr>
+    <h4>Ajustando o Tamanho das Imagens </h4>
+
+    <img src="https://images.unsplash.com/photo-1779591550867-16a29791874e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Reflexo de carro no retrovisor em uma rodvia." height="100" width="150">
+
+    <p>HEIGTH - O atributo height serve para ajustar o tamanho da altuta da imagem</p>
+
+    <p>width - O atributo width serve para ajustar o tamanho da largura da imagem</p>
+
+    <hr>
+
+    <h2>Trabalhando com imagens responsivas</h2>
+    <p> o <code>picture</code> é um ekemento do HTML usado para imagens <em>responsivas e adpativas</em> </p>
+    <p>Esaa Tag permite o seguinte:</p>
+    <ul>
+        <li>Trocar a imagem conforme o <em>Tamanho da Tela;</em></li>
+        <li>Melhorar a performace;</li>
+        <li>Carregar immagns diferentes para mobile, tablet e desktop.</li>
+    </ul>
+
+    <picture>
+        <source srcset="assets/img/acampamento-de-carro-mobile.jpg">
+        <source srcset="assets/img/acampamento-de-carro-tablet.jpg">
+
+        <img src="assets/img/acampamento-de-carro-desktop.jpg" alt="">
+    </picture>
+
+    <p>srcset - serve para oferecer multiplas versões de uma mídia e deixar o navegador esolher a mais adequada
+        conformre tamanho da tela, 
+        formato suportado, largura disponivel, performace.</p>
+</body>
+
+</html>

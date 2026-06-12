@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formulários</title>
+</head>
+
+<body>
+    <h1>Conhecendo o Formulário</h1>
+    <hr>
+    <h2>Form</h2>
+    <p>No HTML, a tag <code> &lt;Form&gt;</code> serve para coletar
+        dados do usuário e enviá-los para agum destino, normalmente um servidor
+        ou uma aplicação web,</p>
+    <!-- #region Acition é o que define destino, o local em que vai ser direcionado 
+ a informação que o user colocar no formulário-->
+    <form action=""></form>
+    <!-- #region Elemento Input - è ultilizado para criar uma caixa onde
+     o usuário poderá inselir a informação solicitada
+      Atributo type - É ultilizado para definir o tipo de campo ou
+      comportamento do input-->
+    <!-- #region Placeholder - Serve como um texto temporario de exemplo apara
+ que o usuario saiba como preencher ou interagir com esse campo-->
+
+    <input type="text" placeholder="Ex: dvd">
+    <!-- #region Label/ etiqueta - Esse elemento é responsavel por identificar o campo de um formulario, Esse campo de um formulário.
+ Esse recurso, diferente do palceholder, é totalmente acessivel.
+ 
+ For - Serve para associar um rotulo/label a um elemento do formulario.
+
+ Id- Serve para identificar de forma unica um elemento.
+ -->
+
+    <label for="Senha">Senha</label>
+    <input type="password" placeholder="Digite Sua Senha:" id="Senha">
+    <input type="password" placeholder="Confirme sua Senha" id="Confirme sua senha">
+
+    <button type="submit">Enviar</button>
+
+    <hr>
+    <h2>Faça Login</h2>
+
+    <form>
+
+        <label for="email">Email:</label><br>
+        <input type="email" placeholder="Seu@email.com" id="email"> <br>
+
+        <label for="password">Senha:</label><br>
+        <input type="password" name="" placeholder="*************" id="password">
+        <br>
+        <button>Enviar</button>
+    </form>
+
+    <hr>
+    <h2>Cadastre-Se</h2>
+
+    <form>
+        <label for="Name-user">Nome:</label>
+        <input type="text" placeholder="o dvd é muito legal" id="Name-user" required> <br>
+
+        <label for="email-user">Email:</label>
+        <input type="email" placeholder="seu@e-mail.com" id="email-user" required><br>
+
+        <label for="password-user">Senha (Min 6 caracteres):</label>
+        <input type="password" id="password-user" placeholder="******" required minlength="6"><br>
+        <br>
+
+        <label for="aceitar-termos">Li e aceito os Termos</label>
+        <input type="checkbox" id="aceitar-termos" required>
+        <br>
+        <br>
+        <button type="submit">Cadastrar-se</button>
+
+
+    </form>
+<br>
+    powerby: Devd-dvd
+</body>
+
+</html>
